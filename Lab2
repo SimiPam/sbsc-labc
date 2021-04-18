@@ -1,0 +1,13 @@
+//lab 2
+
+void main() {
+  print(lessThan100(28, 348));
+}
+
+bool lessThan100(double num1, double num2) {
+  if ((num1 + num2) < 100) {
+    return true;
+  } else {
+    return false;
+  }
+}
