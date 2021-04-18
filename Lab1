@@ -1,0 +1,22 @@
+//lab 1
+
+void main() {
+  primeCheck(3);
+}
+
+void primeCheck(int num) {
+  bool isNotPrime = false;
+  for (int i = 2; i <= num / 2; ++i) {
+// checking for prime or not prime
+    if (num % i == 0) {
+      isNotPrime = true;
+      break;
+    }
+  }
+
+  if (!isNotPrime) {
+    print("Prime number.");
+  } else {
+    print("Not a prime number.");
+  }
+}
